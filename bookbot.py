@@ -1,5 +1,6 @@
 
 import re
+import sys
 
 def open_file(file_path: str):
     try:
@@ -53,8 +54,12 @@ def create_report(file_path:str):
     print("\n--- End report ---")
 
 
-def main():
-    file_path = "books/frankenstein.txt"
+def bookbot():
+    if len(sys.argv) != 2:
+        print("Usage: python3 bookbot.py <file_path>")
+        return
+    
+    file_path = sys.argv[1]
     create_report(file_path)
     
-main()
+bookbot()
