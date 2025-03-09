@@ -13,3 +13,6 @@ BookBot is a simple Python script for analyzing text files. It counts the number
    git clone <repo-url>
    cd <repo-directory>
    python3 bookbot.py <file_path>
+
+
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
